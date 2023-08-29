@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bookface</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,600;1,900&family=Noto+Sans:wght@400;900&family=Open+Sans:ital,wght@1,600&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,600;1,900&family=Noto+Sans:wght@900&family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+    <font size="4">
+    <nav class="navbar">
+        <div class="navbar-logo"> <h1>bookface</h1></div>
+        <ul class="navbar-menu" id="navbarMenu">
+           <li><a href="#inicio">Inicio</a></li>
+           <li><a href="#Aboutus">About us</a></li>
+           <li><a href="#servicios">Servicios</a></li>
+           <li><a href="#Contacto">Contacto</a></li>
+        </ul>
+    
+    <button class="navbar-toggle" id="navbarToggle">☰</button>
+    </nav>
+    
+    
+<div class="container">
+	<h1 class="bie">bienvenido</h1>
+    <br>
+    <h1>desbolquea tu imaginacion y comparte lo que quieras!</h1>
+
+<div id="loginForm">
+	<h1 class="lo">Login</h1>
+	<form onsubmit="return loginUser()">
+		<div class="input-container">
+			<input type="text" id="loginUsername" placeholder="Username" >
+		</div>
+
+		<div class="input-container">
+			<input type="password" id="loginPassword" placeholder="Password">
+
+
+		</div>
+		<button class="loo" type="submit">Login</button>
+        <p class="no">No tienes una cuenta? <a href="#" onclick="toggleForm()">Registate aquí</a></p>
+	</form>
+    <img src="1246334.png" height="240px">
+    <p class="boox">bookface es una red social inspirada para conocer mas personas</p>
+</div>	
+
+<div id="registerForm" style="display: none;"><h1 class="regis">Register</h1>
+<form onsubmit=" return registerUser()">
+		<div class="input-container">
+			<input type="text" id="registerUsername" placeholder="Username">
+		</div>
+		<div class="input-container">
+			<input type="password" id="registerPassword" placeholder="Userpassaword">
+		</div>
+		<button class="res" type="submit">Register</button>
+        
+
+
+</form>
+
+<p class="yap">Ya tienes una cuenta? <a href="#" onclick="toggleForm()">Login here</a></p>
+</div>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
